@@ -10,7 +10,7 @@ target:
 target/crank.txt: target crank.d
 	$(GENERATE) > target/crank.txt
 
-target/crank-s3.txt: target crank.d crank-s3.d
+target/crank-s3.txt: target crank.d crank-s3.d crank-s3.d/05-credentials.txt
 	$(GENERATE) s3 > target/crank-s3.txt
 
 target/crank-mongo.txt: target crank.d crank-mongo.d

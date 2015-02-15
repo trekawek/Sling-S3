@@ -1,1 +1,5 @@
 crank-s3.d/05-credentials.txt
+contrib/crankstart.jar
+contrib/org.apache.sling.launchpad.karaf
+sling
+target
