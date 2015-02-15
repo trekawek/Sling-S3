@@ -2,6 +2,12 @@
 
 A set of [crankstart](https://github.com/apache/sling/tree/trunk/contrib/crankstart/) configuration files starting a Sling instance based on Oak, with optional support to MongoDB (as a node store) and/or S3 (as a blob store).
 
+## Requirements
+
+* make
+* JRE 1.7
+* ruby & nokogiri gem (if you want to auto-update the bundles list)
+
 ## Usage
 
 1. Run `make install-deps` to install necessary local Maven plugins
