@@ -16,8 +16,8 @@ target/crank-s3.txt: target crank.d crank-s3.d crank-s3.d/05-credentials.txt
 target/crank-mongo.txt: target crank.d crank-mongo.d
 	$(GENERATE) mongo > target/crank-mongo.txt
 
-target/crank-s3-mongo.txt: target crank.d crank-mongo.d crank-s3.d
-	$(GENERATE) mongo > target/crank-s3-mongo.txt
+target/crank-s3-mongo.txt: target crank.d crank-mongo.d crank-s3.d crank-s3.d/05-credentials.txt
+	$(GENERATE) mongo s3 > target/crank-s3-mongo.txt
 
 start: target/crank.txt contrib/crankstart.jar
 	java -jar contrib/crankstart.jar target/crank.txt
