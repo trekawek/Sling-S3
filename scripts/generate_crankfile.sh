@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TMP=`mktemp -d -t crank`
+TMP=`mktemp -d -t crank.XXX`
 
 cp crank.d/* $TMP
 
